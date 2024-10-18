@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivalee Shukla - IT Recruiter Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            opacity: 0.3;
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        section {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h1, h2 {
+            color: #35424a;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+            object-fit: cover;
+            border: 5px solid #35424a;
+            transition: transform 0.3s ease;
+        }
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        .achievement {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #35424a;
+        }
+        footer {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            opacity: 0.3;
+            z-index: 1;
+        }
+        footer p {
+            position: relative;
+            z-index: 2;
+        }
+        .skill-tag {
+            display: inline-block;
+            background-color: #35424a;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .skill-tag:hover {
+            background-color: #ff9a9e;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            margin: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .contact-item:hover {
+            background-color: #fad0c4;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shivalee Shukla</h1>
+        <p>IT Recruiter | Talent Acquisition Specialist</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQE2BqByBiqWVQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727159251292?e=1734566400&v=beta&t=IO2sAny0VvxKWBgItb3SuCg3F2WxR85cHMYPuzjIq5g" alt="Shivalee Shukla" class="profile-img">
+            <h2>About Me</h2>
+            <p>Hello! I'm Shivalee Shukla, a dedicated IT Recruiter currently working at Golden Technologies. With a passion for connecting top tech talent with innovative companies, I bring expertise in talent acquisition, industry trends, and building strong professional relationships. My goal is to create perfect matches between skilled professionals and exciting career opportunities in the IT sector.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skillTags">
+                <!-- Skill tags will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="achievement">
+                <h3>IT Recruiter - Golden Technologies</h3>
+                <p>Current Position</p>
+                <ul>
+                    <li>Manage full-cycle recruitment process for IT roles across various technology stacks</li>
+                    <li>Collaborate with hiring managers to understand technical requirements and cultural fit</li>
+                    <li>Develop and implement innovative sourcing strategies to attract top tech talent</li>
+                    <li>Conduct initial screenings and coordinate technical interviews</li>
+                    <li>Maintain a robust pipeline of qualified candidates for current and future openings</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>Key Achievements</h2>
+            <div class="achievement">
+                <h3>Recruitment Drive Success</h3>
+                <p>Led a successful recruitment drive that resulted in hiring 50+ IT professionals within a quarter, reducing time-to-fill by 30%.</p>
+            </div>
+            <div class="achievement">
+                <h3>Diversity Initiative</h3>
+                <p>Spearheaded a diversity recruitment initiative that increased the representation of underrepresented groups in tech roles by 25%.</p>
+            </div>
+            <div class="achievement">
+                <h3>Employer Branding</h3>
+                <p>Collaborated with marketing to enhance employer branding, resulting in a 40% increase in inbound applications for tech positions.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:shivalee.shukla@goldentechnologies.com">shuklashivalee@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>8787080347</p>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/shivaleeshukla" target="_blank">linkedin.com/in/shivaleeshukla</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shivalee Shukla. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Skills array
+        const skills = [
+            "Technical Recruiting", "Talent Sourcing", "Headhunting", "Applicant Tracking Systems (ATS)",
+            "Interview Techniques", "Employer Branding", "Salary Negotiations", "LinkedIn Recruiting",
+            "IT Market Knowledge", "Candidate Relationship Management", "Diversity and Inclusion in Hiring"
+        ];
+
+        // Function to add skill tags
+        function addSkillTags() {
+            const skillTags = document.getElementById('skillTags');
+            skills.forEach(skill => {
+                const tag = document.createElement('span');
+                tag.className = 'skill-tag';
+                tag.textContent = skill;
+                skillTags.appendChild(tag);
+            });
+        }
+
+        // Call the function when the page loads
+        window.onload = addSkillTags;
+
+        // Add hover effect to sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.addEventListener('mouseenter', () => {
+                section.style.backgroundColor = '#f9f9f9';
+            });
+            section.addEventListener('mouseleave', () => {
+                section.style.backgroundColor = '#ffffff';
+            });
+        });
+
+        // Add click-to-copy for contact information
+        const contactItems = document.querySelectorAll('.contact-item');
+        contactItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const text = item.querySelector('p').textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('Copied to clipboard: ' + text);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
